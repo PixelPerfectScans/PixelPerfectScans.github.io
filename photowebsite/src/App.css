@@ -1,6 +1,7 @@
 /* Reset */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
 
 * {
     margin: 0;
@@ -19,7 +20,7 @@
 :root {
     --bold-color: #2b6184;
     --bright-color: #87b4c7;
-    --off-white: #dbdddc;
+    --off-white: #20563b;
     --darker-gray: #aba197;
     --lighter-gray: #d8d1c9;
 }
@@ -54,18 +55,29 @@ button {
 
 /* === Header / Hero === */
 .hero {
-    background: var(--off-white);
-    padding: 2rem 1.5rem;
+    background-image: url("header2.jpg");
+    background-size: cover;
+    padding: 2rem 2rem;
+    /*color: white;*/
+    width:100%;
 }
 
+/*align itmes in center*/
 .hero-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
 }
 
 .hero-nav ul {
+    background-color: var(--bold-color);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
     display: flex;
     gap: 1.5rem;
     list-style: none;
@@ -88,7 +100,14 @@ button {
 }
 
 .hero-content {
+    font-family: "Playwrite CA", cursive;
     text-align: center;
+    background-color: var(--bold-color);
+    color: white;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 1rem ;
 }
 
 .hero-content h1 {
