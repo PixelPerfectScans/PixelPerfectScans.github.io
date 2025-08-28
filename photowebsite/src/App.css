@@ -251,7 +251,7 @@ button {
 .site-footer {
     background-color: #111;
     color: #ccc;
-    padding: 3rem 1.5rem;
+    padding: 3rem 30%;
 }
 
 .footer-nav {
@@ -260,6 +260,7 @@ button {
     gap: 2rem;
     justify-content: space-between;
     margin-bottom: 2rem;
+    margin-right: 1rem;
 }
 
 .footer-nav h4 {

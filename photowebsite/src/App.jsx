@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './App.css';
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { RiGitRepositoryPrivateLine } from "react-icons/ri";
@@ -24,16 +24,37 @@ import elmoEnhanced from "../public/enhanced/4x6b_0007_a.jpg";
 
 import maddieOriginal from "../public/enhanced/4x6b_0168.jpg";
 import maddieEnhanced from "../public/enhanced/4x6b_0168_a.jpg";
+
+
+const QuoteButtonOnClick = () => {window.location = 'mailto:testemail@email.com?subject=Photo Scanning Quote&body=Hello B, %0D%0A ' +
+    '%0D%0A I have attached a picture of the photos I would like scanned. ATTACH PHOTO AND ERASE THIS SENTENCE. I was hoping you can provide an estimate and was also wondering INSERT FURTHER QUESTIONS/COMMENTS/CONCERNS HERE'
++ '%0D%0A %0D%0A Best, %0D%0A %0D%0A YOUR NAME %0D%0A YOUR CELL PHONE NUMBER';};
+
+
+
+function scrollToContact() {
+    const element = document.getElementById('contact');
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+function scrollToProcess() {
+    const element = document.getElementById('process');
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 // Hero Section
 const Hero = () => (
     <header className="hero">
         <nav className="hero-nav">
             <ul>
-                <li><a href="#process">The Process</a></li>
+                <li><a onClick={scrollToProcess}>The Process</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a onClick={scrollToContact}>Contact</a></li>
             </ul>
-        <button className="demo-btn">Get a Quote</button>
+        <button className="demo-btn"  onClick={QuoteButtonOnClick}>Get a Quote</button>
         </nav>
         <div className="hero-content">
             <h1>PixelPerfectScans</h1>
@@ -77,8 +98,8 @@ const Features = () => (
 const AudienceCards = () => (
     <section className="audience-cards">
         {[
-            { title: "Safe", description: "No need to ship your photos. I can personally transport your photos.", image: <AiFillSafetyCertificate /> },
-            { title: "Private" , description: "No cloud copies are made unless specifically requested.", image:<RiGitRepositoryPrivateLine /> },
+            { title: "Safe", description: "No need to ship your photos. I personally transport your photos.", image: <AiFillSafetyCertificate /> },
+            { title: "Private" , description: "No cloud storage is used. Photos are put on a physical drive and handed to you directly.", image:<RiGitRepositoryPrivateLine /> },
             { title: "Affordable", description: "Digitize photos for just pennies each. Bulk pricing offered.",image:<MdAttachMoney /> },
             { title: "Efficient", description: "Most collections are copied and returned with 48 hours.", image:<IoSpeedometerOutline /> }
         ].map(({ title, description,image }) => (
@@ -94,7 +115,7 @@ const AudienceCards = () => (
 
 const Mission = () => (
     <section className="mission">
-        <h2>Preserve what matters most</h2>
+        <h2>Preserving the memories that matters most</h2>
     </section>
 );
 
@@ -174,37 +195,98 @@ const ExamplePhotos = () => (
     </>
 )
 
+const Process = () => (
+    <><div id="process">
+        <h2>The process</h2>
+    <ul>
+        <li>
+            <h3>Step 1</h3>
+            <p>Take photos out from albums and remove any photos with glue or staples. Remove all paper clips and other foreign objects. </p>
+        </li>
+        <li>
+            <h3>Step 2</h3>
+            <p>Organize photos by size and, optionally, by album.</p>
+        </li>
+        <li>
+            <h3>Step 3</h3>
+            <p>Send me a picture of the photo collection and I will provide you with an estimate.</p>
+        </li>
+        <li>
+            <h3>Step 4</h3>
+            <p>Schedule a pickup.</p>
+            <p>I take an upfront $150 deposit that is deducted from the final bill, paid upon return of your photos and scanned copies.</p>
+        </li>
+        <li>
+            <h3>Step 5</h3>
+            <p> Prepare a flash drive with sufficient storage or clear enough room on a computer.</p>
+            <p> In your cost estimate I will also give a storage estimate. I can provide the flash drives at a small markup. In the event we use your storage (drive or computer) I will send you the exact data size prior to returning with your photos.</p>
+        </li>
+        <li>
+            <h3>Step 6</h3>
+            <p>Schedule a return time. </p>
+            <p>For most collections, I can schedule your return time when I schedule the pickup. The data transfer typically takes just a few minutes.</p>
+        </li>
+    </ul>
+    </div>
+    </>
+)
+
+const Faq = () => (
+    <section className="additional-services">
+        <h2>FAQ</h2>
+        <ul>
+            <li>
+                <h3> What photo sizes are acceptable? </h3>
+                <p> I can scan photos as small as SIZE and as large as SIZE.</p>
+            </li>
+            <li>
+                <h3> What areas do you service? </h3>
+                <p> I provide in-person pick-up and delivery services to any city within 20 miles of the 91750 zip code.</p>
+            </li>
+            <li>
+                <h3> Do you accept photos by mail? </h3>
+                <p> I do accept photos by mail but I do not pay for postage or insurance.</p>
+            </li>
+            <li>
+                <h3> Is there a minimum or maximum number of photos you accept? </h3>
+                <p> I charge a minimum of $150, which equates to roughly AMOUNT 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos I charge an additional upfront deposit.</p>
+            </li>
+        </ul>
+    </section>
+)
+
+const AdditionalServices = () => (
+    <section className="additional-services">
+        <h2>Additional Services</h2>
+        <ul>
+            <li>
+                <h3> Group share </h3>
+                <p> Send me a list of email addresses and I will automatically share your photos with them.</p>
+            </li>
+            <li>
+                <h3> Digital Photo frame </h3>
+                <p> I can provide you with a digital photo frame pre-installed with your newly scanned photos.  </p>
+            </li>
+        </ul>
+    </section>
+)
+
 
 
 // Footer
 const Footer = () => (
     <footer className="site-footer">
-        <div className="footer-nav">
+        <div className="footer-nav" id="contact">
             <div>
-                <h4>We’re </h4>
+                <h4>Contact</h4>
                 <ul>
-                    <li><a href="#how-it-works">How It Works</a></li>
-                    <li><a href="#servicers">For Servicers</a></li>
-                    <li><a href="#subservicers">For Subservicers</a></li>
-                    <li><a href="#lenders">For Lenders</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Company</h4>
-                <ul>
-                    <li>About</li><li>Contact</li>
-                </ul>
-            </div>
-            <div>
-                <h4>Support & Resources</h4>
-                <ul>
-                    <li>Blog (Coming Soon)</li><li>Security & Compliance</li><li>Why is Haven involved?</li>
+                    <li>Email: COMPANY EMAIL </li><li>Phone: 666 666 6666</li>
                 </ul>
             </div>
             <div className="subscribe">
                 <h4>Request a quote</h4>
-                <input type="email" placeholder="Your email" />
-                <button>Quote</button>
+
+                <button onClick={QuoteButtonOnClick}>Quote</button>
             </div>
         </div>
         <p>© Breanne. All Rights Reserved.</p>
@@ -214,15 +296,13 @@ const Footer = () => (
 const App = () => (
     <div >
         <Hero />
-        {/*<Stats />*/}
         <Features />
-
         <Mission />
         <ExamplePhotos />
-
         <AudienceCards />
-
         <TeamAndTestimonials />
+        <Process />
+        <Faq/>
         <Footer />
     </div>
 
