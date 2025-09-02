@@ -57,7 +57,7 @@ button {
 /* === Header / Hero === */
 .hero {
     /*color: white;*/
-    background-image: url("header2.jpg");
+    background-image: url("../public/header2.jpg");
     background-size: cover;
     padding: 1rem 1rem 2rem;
 }
