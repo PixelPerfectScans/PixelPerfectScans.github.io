@@ -26,7 +26,7 @@ import maddieOriginal from "../public/enhanced/4x6b_0168.jpg";
 import maddieEnhanced from "../public/enhanced/4x6b_0168_a.jpg";
 
 
-const QuoteButtonOnClick = () => {window.location = 'mailto:testemail@email.com?subject=Photo Scanning Quote&body=Hello B, %0D%0A ' +
+const QuoteButtonOnClick = () => {window.location = 'mailto:PixelPerfectScans@gmail.com?subject=Photo Scanning Quote&body=Hello B, %0D%0A ' +
     '%0D%0A I have attached a picture of the photos I would like scanned. ATTACH PHOTO AND ERASE THIS SENTENCE. I was hoping you can provide an estimate and was also wondering INSERT FURTHER QUESTIONS/COMMENTS/CONCERNS HERE'
 + '%0D%0A %0D%0A Best, %0D%0A %0D%0A YOUR NAME %0D%0A YOUR CELL PHONE NUMBER';};
 
@@ -144,7 +144,6 @@ const TeamAndTestimonials = () => (
 
 const ExamplePhotos = () => (
     <>
-        {/*<h3>Example Results</h3>*/}
         <section className="example-photos">
             <div className="example-photos-row">
                 <div className="example-photos-card">
@@ -208,17 +207,17 @@ const Process = () => (
         {/*    <h3>Send me a picture of the photo collection and I will provide you with an estimate.</h3>*/}
         {/*</li>*/}
         <li>
-            <h2>Step 3</h2>
+            <h2>Step 2</h2>
             <h3>Schedule a pickup.</h3>
             <p>I take an upfront $150 deposit that is deducted from the final bill, paid upon return of your photos and scanned copies.</p>
         </li>
         <li>
-            <h2>Step 4</h2>
+            <h2>Step 3</h2>
             <h3> Ensure sufficient storage.</h3>
-            <p> In your cost estimate I will also give a storage estimate. I can provide flash drives at a small markup. In the event we use your storage (drive or computer) I will send you the exact data size prior to returning with your photos.</p>
+            <p> In your cost estimate I will also give a storage estimate. I can provide flash drives at a small markup. I will send you the exact data size prior to returning with your photos.</p>
         </li>
         <li>
-            <h2>Step 5</h2>
+            <h2>Step 4</h2>
             <h3>Schedule a return time. </h3>
             <p>For most collections, I can schedule your return time when I schedule the pickup. The data transfer typically takes just a few minutes.</p>
         </li>
@@ -276,7 +275,7 @@ const Footer = () => (
             <div>
                 <h4>Contact</h4>
                 <ul>
-                    <li>Email: COMPANY EMAIL </li><li>Phone: 666 666 6666</li>
+                    <li>Email: PixelPerfectScans@gmail.com </li><li>Phone: 666 666 6666</li>
                 </ul>
             </div>
             <div className="subscribe">
@@ -285,7 +284,7 @@ const Footer = () => (
                 <button onClick={QuoteButtonOnClick}>Quote</button>
             </div>
         </div>
-        <p>© Breanne. All Rights Reserved.</p>
+        <p>© Breanne T. All Rights Reserved.</p>
     </footer>
 );
 
