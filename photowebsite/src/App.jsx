@@ -51,7 +51,6 @@ const Hero = () => (
         <nav className="hero-nav">
             <ul>
                 <li><a onClick={scrollToProcess}>The Process</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a onClick={scrollToContact}>Contact</a></li>
             </ul>
         <button className="demo-btn"  onClick={QuoteButtonOnClick}>Get a Quote</button>
@@ -124,7 +123,7 @@ const TeamAndTestimonials = () => (
     <section className="team-testimonials">
 
         <div className="testimonials">
-            <h3>Hear from our customers:</h3>
+            <h2>Hear from our customers:</h2>
             <section className="audience-cards">
                 {[
                     { title: "Jane Doe", description: "\"I am so glad I found PixelPerfectScans and had my photo collection digitized. I think the biggest perk was being able to share with my family. I adore my digital photo frame where I can see new pictures each day.\""},
@@ -196,34 +195,31 @@ const ExamplePhotos = () => (
 )
 
 const Process = () => (
-    <><div id="process">
-        <h2>The process</h2>
+    <><div id="process" className="process">
+        <h1>The Process</h1>
     <ul>
         <li>
-            <h3>Step 1</h3>
-            <p>Take photos out from albums and remove any photos with glue or staples. Remove all paper clips and other foreign objects. </p>
+            <h2>Step 1</h2>
+            <h3>Prepare photos </h3>
+            <p>Take photos out from albums and remove any photos with glue or staples. Remove all paper clips and other foreign objects. Organize photos by size and, optionally, by album.</p>
         </li>
+        {/*<li>*/}
+        {/*    <h2>Step 3</h2>*/}
+        {/*    <h3>Send me a picture of the photo collection and I will provide you with an estimate.</h3>*/}
+        {/*</li>*/}
         <li>
-            <h3>Step 2</h3>
-            <p>Organize photos by size and, optionally, by album.</p>
-        </li>
-        <li>
-            <h3>Step 3</h3>
-            <p>Send me a picture of the photo collection and I will provide you with an estimate.</p>
-        </li>
-        <li>
-            <h3>Step 4</h3>
-            <p>Schedule a pickup.</p>
+            <h2>Step 3</h2>
+            <h3>Schedule a pickup.</h3>
             <p>I take an upfront $150 deposit that is deducted from the final bill, paid upon return of your photos and scanned copies.</p>
         </li>
         <li>
-            <h3>Step 5</h3>
-            <p> Prepare a flash drive with sufficient storage or clear enough room on a computer.</p>
-            <p> In your cost estimate I will also give a storage estimate. I can provide the flash drives at a small markup. In the event we use your storage (drive or computer) I will send you the exact data size prior to returning with your photos.</p>
+            <h2>Step 4</h2>
+            <h3> Ensure sufficient storage.</h3>
+            <p> In your cost estimate I will also give a storage estimate. I can provide flash drives at a small markup. In the event we use your storage (drive or computer) I will send you the exact data size prior to returning with your photos.</p>
         </li>
         <li>
-            <h3>Step 6</h3>
-            <p>Schedule a return time. </p>
+            <h2>Step 5</h2>
+            <h3>Schedule a return time. </h3>
             <p>For most collections, I can schedule your return time when I schedule the pickup. The data transfer typically takes just a few minutes.</p>
         </li>
     </ul>
@@ -232,7 +228,7 @@ const Process = () => (
 )
 
 const Faq = () => (
-    <section className="additional-services">
+    <section className="faq">
         <h2>FAQ</h2>
         <ul>
             <li>
@@ -300,8 +296,8 @@ const App = () => (
         <Mission />
         <ExamplePhotos />
         <AudienceCards />
-        <TeamAndTestimonials />
         <Process />
+        <TeamAndTestimonials />
         <Faq/>
         <Footer />
     </div>
