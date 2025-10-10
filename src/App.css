@@ -114,10 +114,10 @@ button {
     /*//space between the photos*/
 }
 .example-photos-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1rem;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*!*justify-content: space-between;*!*/
+    /*font-size: 1rem;*/
 
 }
 .example-photos-row{
@@ -137,7 +137,7 @@ button {
     width: 90%;
     height: auto;
     max-width: 500px;
-    margin: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -266,8 +266,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    background-color: var(--bright-color);
+      background-color: var(--bright-color);
 }
 
 .process h2{
@@ -279,9 +278,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .5rem;
+    /*gap: .5rem;*/
     list-style: none;
-    width: 100%;
+    padding-left: 0;
 }
 
 .process li{
@@ -293,12 +292,31 @@ button {
     display: flex;
     flex-direction: column;
     color: white;
-    max-width: 60%;
+    width: 750px;
     align-items: center;
     flex: 1;
     box-shadow: 5px 7px 3px #808080;
 
 }
+
+@media (max-width: 768px) {
+    .process li{
+        background-color: var(--bold-color);
+        margin : 1rem;
+        padding: 0rem 1rem;
+        border-radius: 25px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        flex: 1;
+        box-shadow: 5px 7px 3px #808080;
+        max-width: 60%;
+    }
+}
+
+
 
 .faq{
     display: flex;

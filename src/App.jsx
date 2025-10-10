@@ -27,7 +27,7 @@ import maddieEnhanced from "../public/enhanced/4x6b_0168_a.jpg";
 
 
 const QuoteButtonOnClick = () => {window.location = 'mailto:PixelPerfectScans@gmail.com?subject=Photo Scanning Quote&body=Hello B, %0D%0A ' +
-    '%0D%0A I have attached a picture of the photos I would like scanned. ATTACH PHOTO AND ERASE THIS SENTENCE. I was hoping you can provide an estimate and was also wondering INSERT FURTHER QUESTIONS/COMMENTS/CONCERNS HERE'
+    '%0D%0A I have attached a picture of the photos I would like scanned. ATTACH PICTURE(S) OF COLLECTION AND ERASE THIS SENTENCE. I was hoping you can provide an estimate and was also wondering INSERT FURTHER QUESTIONS/COMMENTS/CONCERNS HERE'
 + '%0D%0A %0D%0A Best, %0D%0A %0D%0A YOUR NAME %0D%0A YOUR CELL PHONE NUMBER';};
 
 
@@ -71,11 +71,12 @@ const Features = () => (
         <div className="feature">
             <h3>Share   <FaRegShareSquare />
             </h3>
-            <p>Your digital photos are just an email away from sharing with family and friends</p>
+            <p>Your digital photos are just an email away from sharing with family and friends!</p>
         </div>
         <div className="feature">
             <h3>Enhance <GrUpgrade/></h3>
             <p>Each scanned photo comes with an original and an enhanced version. Any writing on the back side is automatically detected and scanned.</p>
+            <p>See examples below!</p>
         </div>
         <div className="feature">
             <h3>Protect <FaShieldAlt/> </h3>
@@ -83,11 +84,11 @@ const Features = () => (
         </div>
         <div className="feature">
             <h3>Enjoy <HiOutlineEmojiHappy/></h3>
-            <p>Make your phone screen or computer desktop a precious memory. Try a digital photo frame and enjoy 1000's of photos in one single frame! </p>
+            <p>Make your phone, tablet, or computer wallpaper a precious memory. Try a digital photo frame and enjoy hundreds of photos in one single frame! </p>
         </div>
         <div className="feature">
             <h3>Organize <LuFolderTree/></h3>
-            <p>Photo storage services like Apple and Google include free organizing AI tools like face detection.</p>
+            <p>Digital files will be grouped according to the grouping of physical copies. Additionally, photo storage services (e.g. Apple and Google) include free organizing AI tools.</p>
         </div>
     </section>
 );
@@ -99,7 +100,7 @@ const AudienceCards = () => (
         {[
             { title: "Safe", description: "No need to ship your photos. I personally transport your photos.", image: <AiFillSafetyCertificate /> },
             { title: "Private" , description: "No cloud storage is used. Photos are put on a physical drive and handed to you directly.", image:<RiGitRepositoryPrivateLine /> },
-            { title: "Affordable", description: "Digitize photos for just pennies each. Bulk pricing offered.",image:<MdAttachMoney /> },
+            { title: "Affordable", description: "We charge only $0.19 per photo and offer bulk discounts!",image:<MdAttachMoney /> },
             { title: "Efficient", description: "Most collections are copied and returned with 48 hours.", image:<IoSpeedometerOutline /> }
         ].map(({ title, description,image }) => (
             <div key={title}  className="card">
@@ -202,10 +203,6 @@ const Process = () => (
             <h3>Prepare photos </h3>
             <p>Take photos out from albums and remove any photos with glue or staples. Remove all paper clips and other foreign objects. Organize photos by size and, optionally, by album.</p>
         </li>
-        {/*<li>*/}
-        {/*    <h2>Step 3</h2>*/}
-        {/*    <h3>Send me a picture of the photo collection and I will provide you with an estimate.</h3>*/}
-        {/*</li>*/}
         <li>
             <h2>Step 2</h2>
             <h3>Schedule a pickup.</h3>
@@ -213,13 +210,13 @@ const Process = () => (
         </li>
         <li>
             <h2>Step 3</h2>
-            <h3> Ensure sufficient storage.</h3>
-            <p> In your cost estimate I will also give a storage estimate. I can provide flash drives at a small markup. I will send you the exact data size prior to returning with your photos.</p>
+            <h3>Photos are scanned.</h3>
+            <p>Sit back and relax while we get to work!</p>
         </li>
         <li>
             <h2>Step 4</h2>
-            <h3>Schedule a return time. </h3>
-            <p>For most collections, I can schedule your return time when I schedule the pickup. The data transfer typically takes just a few minutes.</p>
+            <h3>Photos are returned. </h3>
+            <p>Most photos are scanned within 24 hours and returned within 48 hours. Your original photos will be returned in the same groupings you provide them in. Your digital copies will be provided on a complimentary usb drive.</p>
         </li>
     </ul>
     </div>
@@ -244,7 +241,7 @@ const Faq = () => (
             </li>
             <li>
                 <h3> Is there a minimum or maximum number of photos you accept? </h3>
-                <p> I charge a minimum of $150, which equates to roughly AMOUNT 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos I charge an additional upfront deposit.</p>
+                <p> I charge a minimum of $150, which equates to roughly 790 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos I charge an additional upfront deposit.</p>
             </li>
         </ul>
     </section>
@@ -275,7 +272,7 @@ const Footer = () => (
             <div>
                 <h4>Contact</h4>
                 <ul>
-                    <li>Email: PixelPerfectScans@gmail.com </li><li>Phone: 666 666 6666</li>
+                    <li>Email: PixelPerfectScans@gmail.com </li><li>Phone: (909) 654-4770</li>
                 </ul>
             </div>
             <div className="subscribe">
