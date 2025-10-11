@@ -312,7 +312,7 @@ button {
         align-items: center;
         flex: 1;
         box-shadow: 5px 7px 3px #808080;
-        max-width: 60%;
+        max-width: 40%;
     }
 }
 
@@ -388,6 +388,7 @@ button {
 
 .footer-nav ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .footer-nav li {
@@ -415,7 +416,7 @@ button {
 }
 
 .site-footer p {
-    text-align: center;
+    /*text-align: center;*/
     font-size: 0.85rem;
     color: #888;
 }

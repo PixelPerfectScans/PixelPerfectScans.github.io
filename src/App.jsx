@@ -272,7 +272,10 @@ const Footer = () => (
             <div>
                 <h4>Contact</h4>
                 <ul>
-                    <li>Email: PixelPerfectScans@gmail.com </li><li>Phone: (909) 654-4770</li>
+                    <li><p>Email: </p>
+                        PixelPerfectScans@gmail.com </li>
+                    <li><p>Phone: </p>
+                        (909) 654-4770</li>
                 </ul>
             </div>
             <div className="subscribe">
@@ -281,7 +284,6 @@ const Footer = () => (
                 <button onClick={QuoteButtonOnClick}>Quote</button>
             </div>
         </div>
-        <p>© Breanne T. All Rights Reserved.</p>
     </footer>
 );
 
