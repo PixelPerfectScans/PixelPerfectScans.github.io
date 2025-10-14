@@ -98,7 +98,7 @@ const Features = () => (
 const AudienceCards = () => (
     <section className="audience-cards">
         {[
-            { title: "Safe", description: "No need to ship your photos. I personally transport your photos.", image: <AiFillSafetyCertificate /> },
+            { title: "Safe", description: "No need to ship your photos. We personally transport your photos.", image: <AiFillSafetyCertificate /> },
             { title: "Private" , description: "No cloud storage is used. Photos are put on a physical drive and handed to you directly.", image:<RiGitRepositoryPrivateLine /> },
             { title: "Affordable", description: "We charge only $0.19 per photo and offer bulk discounts!",image:<MdAttachMoney /> },
             { title: "Efficient", description: "Most collections are copied and returned with 48 hours.", image:<IoSpeedometerOutline /> }
@@ -229,19 +229,19 @@ const Faq = () => (
         <ul>
             <li>
                 <h3> What photo sizes are acceptable? </h3>
-                <p> I can scan photos as small as SIZE and as large as SIZE.</p>
+                <p> We can scan photos as small as 2x2 and as large as 8x10.</p>
             </li>
             <li>
                 <h3> What areas do you service? </h3>
-                <p> I provide in-person pick-up and delivery services to any city within 20 miles of the 91750 zip code.</p>
+                <p> We provide in-person pick-up and delivery services to any city within 20 miles of the 91750 zip code.</p>
             </li>
             <li>
                 <h3> Do you accept photos by mail? </h3>
-                <p> I do accept photos by mail but I do not pay for postage or insurance.</p>
+                <p>  We do accept photos by mail but do not pay for postage or insurance.</p>
             </li>
             <li>
                 <h3> Is there a minimum or maximum number of photos you accept? </h3>
-                <p> I charge a minimum of $150, which equates to roughly 790 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos I charge an additional upfront deposit.</p>
+                <p> We charge a minimum of $150, which equates to roughly 790 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos we charge an additional upfront deposit.</p>
             </li>
         </ul>
     </section>
@@ -253,11 +253,11 @@ const AdditionalServices = () => (
         <ul>
             <li>
                 <h3> Group share </h3>
-                <p> Send me a list of email addresses and I will automatically share your photos with them.</p>
+                <p> Send me a list of email addresses and we will automatically share your photos with them.</p>
             </li>
             <li>
                 <h3> Digital Photo frame </h3>
-                <p> I can provide you with a digital photo frame pre-installed with your newly scanned photos.  </p>
+                <p> We can provide you with a digital photo frame pre-installed with your newly scanned photos.  </p>
             </li>
         </ul>
     </section>
