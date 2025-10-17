@@ -206,7 +206,7 @@ const Process = () => (
         <li>
             <h2>Step 2</h2>
             <h3>Schedule a pickup.</h3>
-            <p>I take an upfront $150 deposit that is deducted from the final bill, paid upon return of your photos and scanned copies.</p>
+            <p>I take an upfront $190 deposit that is deducted from the final bill, paid upon return of your photos and scanned digital copies.</p>
         </li>
         <li>
             <h2>Step 3</h2>
@@ -241,7 +241,7 @@ const Faq = () => (
             </li>
             <li>
                 <h3> Is there a minimum or maximum number of photos you accept? </h3>
-                <p> We charge a minimum of $150, which equates to roughly 790 3x5s. There is no maximum number of photos, but for photo collections of 5000+ photos we charge an additional upfront deposit.</p>
+                <p> We charge a minimum of $190, which covers the first 1000 photos. There is no maximum number of photos, but for photo collections of 5000+ photos we charge an additional upfront deposit.</p>
             </li>
         </ul>
     </section>
