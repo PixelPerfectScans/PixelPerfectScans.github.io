@@ -25,6 +25,8 @@ import elmoEnhanced from "../public/enhanced/4x6b_0007_a.jpg";
 import maddieOriginal from "../public/enhanced/4x6b_0168.jpg";
 import maddieEnhanced from "../public/enhanced/4x6b_0168_a.jpg";
 
+import countRefer from "../public/countrefer.jpg"
+
 
 const QuoteButtonOnClick = () => {window.location = 'mailto:PixelPerfectScans@gmail.com?subject=Photo Scanning Quote&body=Hello B, %0D%0A ' +
     '%0D%0A I have attached a picture of the photos I would like scanned. ATTACH PICTURE(S) OF COLLECTION AND ERASE THIS SENTENCE. I was hoping you can provide an estimate and was also wondering INSERT FURTHER QUESTIONS/COMMENTS/CONCERNS HERE'
@@ -170,16 +172,16 @@ const ExamplePhotos = () => (
                     <img className="examplephoto" src={maddieEnhanced} alt={"enhanced"}/>
                 </div>
             </div>
-            <div className="example-photos-row">
-                <div className="example-photos-card">
-                    <h2>Original</h2>
-                    <img className="examplephoto" src={elmoOriginal} alt={"original"} />
-                </div>
-                <div className="example-photos-card">
-                    <h2>Enhanced</h2>
-                    <img className="examplephoto" src={elmoEnhanced} alt={"enhanced"}/>
-                </div>
-            </div>
+            {/*<div className="example-photos-row">*/}
+            {/*    <div className="example-photos-card">*/}
+            {/*        <h2>Original</h2>*/}
+            {/*        <img className="examplephoto" src={elmoOriginal} alt={"original"} />*/}
+            {/*    </div>*/}
+            {/*    <div className="example-photos-card">*/}
+            {/*        <h2>Enhanced</h2>*/}
+            {/*        <img className="examplephoto" src={elmoEnhanced} alt={"enhanced"}/>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className="example-photos-row">
                 <div className="example-photos-card">
                     <h2>Original</h2>
@@ -240,10 +242,24 @@ const Faq = () => (
                 <p>  We do accept photos by mail but do not pay for postage or insurance.</p>
             </li>
             <li>
-                <h3> Is there a minimum or maximum number of photos you accept? </h3>
-                <p> We charge a minimum of $190, which covers the first 1000 photos. There is no maximum number of photos, but for photo collections of 5000+ photos we charge an additional upfront deposit.</p>
+                <h3> What resolution are the digital copies?</h3>
+                <p>Photos are scanned at a high resolution of 600 dpi. For a single 3x5, this results in a digital copy of roughly 9MB.</p>
             </li>
+            <li>
+                <h3> Do I need to provide my own storage medium?</h3>
+                <p>Not necessary! We provide complementary USB drives for you.</p>
+            </li>
+            <li>
+                <h3> Is there a minimum or maximum number of photos you accept? </h3>
+                <p> We charge a minimum of $190, which covers the first 1000 photos (roughly 4 stacks pictured below). There is no maximum number of photos, but for photo collections of 5000+ photos we charge an additional upfront deposit.</p>
+            </li>
+
         </ul>
+        <div className="countref-container">
+            <img className="countref" src={countRefer} alt={"Stack of 275 photos and an album containing 275 photos"}/>
+            <p> Stack of 275 photos and an album containing 275 photos.</p>
+        </div>
+
     </section>
 )
 
